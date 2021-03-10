@@ -32,21 +32,21 @@ Install NPM packages
 npm i persiantool
 ```
 
-<!-- USAGE EXAMPLES -->
-
 ## Usage
 
 ### persianNum
 
 ```JS
-persinaNum("1234567890")
+import {persinaNum} from "persiantool";
+persinaNum("1234567890");
 // ۱۲۳۴۵۶۷۸۹۰
 ```
 
 Removes non-number characters
 
 ```JS
-persinaNum("aAbv1sd2+/}]")
+import {persianNum} from "persiantool";
+persinaNum("aAbv1sd2+/}]");
 // ۱۲
 ```
 
@@ -55,7 +55,8 @@ persinaNum("aAbv1sd2+/}]")
 accepts + sign
 
 ```JS
-persianTellNum("+1234567890")
+import {persianTellNum} from "persiantool";
+persianTellNum("+1234567890");
 // +۱۲۳۴۵۶۷۸۹۰
 ```
 
@@ -64,7 +65,8 @@ persianTellNum("+1234567890")
 num,char,special char
 
 ```JS
-persian("+1234abcdef")
+import {persian} from "persiantool";
+persian("+1234abcdef");
 // +شذزیثب۱۲۳۴
 ```
 
@@ -73,7 +75,8 @@ persian("+1234abcdef")
 Removes Numbers
 
 ```JS
-persianChar("123abcd")
+import {persianChar} from "persiantool";
+persianChar("123abcd");
 // شذزی
 ```
 
@@ -82,14 +85,16 @@ persianChar("123abcd")
 Removes non-Numbers
 
 ```JS
-englishNum("شسی۱۲۳")
+import {englishNum} from "persiantool";
+englishNum("شسی۱۲۳");
 // 123
 ```
 
 ### english
 
 ```JS
-english("شسی۱۲۳")
+import {english} from "persiantool";
+english("شسی۱۲۳");
 // 123asd
 ```
 
@@ -98,6 +103,7 @@ english("شسی۱۲۳")
 put a camma , each three characters Whether it's Persian or English
 
 ```JS
-english("1000000")
+import {Separator} from "persiantool";
+Separator("1000000");
 // 1,000,000
 ```
