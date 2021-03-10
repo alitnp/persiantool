@@ -1,0 +1,12 @@
+{
+	"name": "persiantool",
+	"version": "1.0.3",
+	"description": "readme updated",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
