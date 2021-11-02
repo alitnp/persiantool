@@ -107,3 +107,12 @@ import {Separator} from "persiantool";
 Separator("1000000");
 // 1,000,000
 ```
+
+
+determine character and length
+
+```JS
+import {Separator} from "persiantool";
+Separator("990505","/",2);
+// 99/05/05
+```
